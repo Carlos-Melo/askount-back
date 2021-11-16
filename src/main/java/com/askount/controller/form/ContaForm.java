@@ -16,7 +16,6 @@ public class ContaForm {
 	private String banco;
 	@NotNull @NotEmpty
 	private String tipoBanco;
-	@NotNull @NotEmpty
 	private String valorInicial;
 	private Long idUsuario;
 	

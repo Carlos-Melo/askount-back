@@ -21,7 +21,6 @@ public class LancamentoForm {
 	@DateTimeFormat(pattern = "dd/MM/yyyy")
 	private LocalDate dataCompetencia;
 	private String fornecedor;
-	@NotNull @NotEmpty
 	private String valor;
 	private Boolean recebimento;
 	private Long idConta;

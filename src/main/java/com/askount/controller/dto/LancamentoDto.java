@@ -4,13 +4,14 @@ import java.time.LocalDate;
 import java.util.List;
 import java.util.stream.Collectors;
 
-
+import com.askount.modelo.Conta;
 import com.askount.modelo.Lancamento;
 
 public class LancamentoDto {
 
 	private Long id;
 	private String descricao;
+	private String servico;
 	private String setor;
 	private LocalDate dataCompetencia;
 	private String fornecedor;
@@ -20,6 +21,7 @@ public class LancamentoDto {
 	public LancamentoDto(Lancamento lancamento) {
 		this.id = lancamento.getId();
 		this.descricao = lancamento.getDescricao();
+		this.servico = lancamento.getServico();
 		this.setor = lancamento.getSetor();
 		this.dataCompetencia = lancamento.getDataCompetencia();
 		this.fornecedor = lancamento.getFornecedor();
@@ -33,6 +35,10 @@ public class LancamentoDto {
 
 	public String getDescricao() {
 		return descricao;
+	}
+	
+	public String getServico() {
+		return servico;
 	}
 
 	public String getSetor() {
